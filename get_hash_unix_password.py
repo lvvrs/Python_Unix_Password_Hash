@@ -8,6 +8,8 @@ Available method's:
 Author: Vladimir Leonov
 Release: 0.0.1
 Date: 18.12.2021
+Documentation: https://docs.python.org/3/library/crypt.html
+Lib Repository: https://github.com/python/cpython/blob/3.10/Lib/crypt.py
 """
 
 
