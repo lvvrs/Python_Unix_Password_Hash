@@ -1,13 +1,13 @@
 """
 This script determinating type hash for unix password.
-Available method's:
+Available hash type's:
 1) MD5
 2) SHA-256
 3) SHA-512
 
 Author: Vladimir Leonov
 Release: 0.0.2
-Date: 26.12.2021
+Date: 27.12.2021
 """
 
 
