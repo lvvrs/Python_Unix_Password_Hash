@@ -6,7 +6,7 @@ Available method's:
 3) SHA-512
 
 Author: Vladimir Leonov
-Release: 0.0.1
+Release: 0.0.2
 Date: 26.12.2021
 """
 
@@ -37,4 +37,4 @@ hash_examples = [
 ]
 
 for i in hash_examples:
-    print(determinating_type_hash(i))
+    print(i + " - Hash type: " + determinating_type_hash(i))

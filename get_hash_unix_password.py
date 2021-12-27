@@ -6,7 +6,7 @@ Available method's:
 3) SHA-512
 
 Author: Vladimir Leonov
-Release: 0.0.2
+Release: 0.0.3
 Date: 21.12.2021
 Documentation: https://docs.python.org/3/library/crypt.html
 Lib Repository: https://github.com/python/cpython/blob/3.10/Lib/crypt.py
@@ -28,21 +28,16 @@ def get_pass_hash(password, method):
     return pass_hash
 
 
-pass_for_crypt = "Pass0rd"
+pass_examples = [
+    "Pa$$w0rd",
+    "Ab123456@",
+    "Qwe123456!"
+]
 
-hash_md5 = get_pass_hash(pass_for_crypt, "md5")
-
-hash_sha256 = get_pass_hash(pass_for_crypt, "sha256")
-
-hash_sha512 = get_pass_hash(pass_for_crypt, "sha512")
-
-bad_hash = get_pass_hash(pass_for_crypt, "sha513")
-
-print("=====MD5=====")
-print(hash_md5)
-print("=====SHA-256=====")
-print(hash_sha256)
-print("=====SHA-512=====")
-print(hash_sha512)
-print("=====Bad_Hash=====")
-print(bad_hash)
+for i in pass_examples:
+    print("================ " + i + " ================")
+    print("Hash MD-5: " + get_pass_hash(i, "md5"))
+    print("Hash SHA-256: " + get_pass_hash(i, "sha256"))
+    print("Hash SHA-512: " + get_pass_hash(i, "sha512"))
+    print("Error: " + get_pass_hash(i, "sha513"))
+    print("===========================================")
