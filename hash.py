@@ -20,6 +20,7 @@ Examples:
 
 If using file, file recomended  place near script, answer created file near input file with name:
 !!! When script run with -i argument - value mast set in ''
+!!! When script run with -f argument - file_path/file_name value must set in ''
 For type hashes - type_hashes.txt
 For passwords - pass_hashes.txt
 
