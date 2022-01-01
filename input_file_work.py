@@ -13,7 +13,7 @@ Script read values and add values in list.
 List with values return in main script hash.py
 
 Author: Vladimir Leonov
-Release: 0.0.1
+Release: 0.0.2
 Date: 01.01.2022
 """
 
@@ -22,5 +22,6 @@ def input_file(filepath):
     open_file = open(filepath, 'r')
     file_content = open_file.read()
     list_values = file_content.split(sep='\n')
+    list_values = list(filter(None, list_values))
     open_file.close()
     return list_values
