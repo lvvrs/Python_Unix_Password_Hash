@@ -7,7 +7,7 @@ Script **hash.py** have functions for:
 
 
 For check work python functions use python unit tests.
-Unit tests in directory **unit_tests***.
+Unit tests in directory **unit_tests**.
 
 Commands for script **hash.py** contain in file.
 
