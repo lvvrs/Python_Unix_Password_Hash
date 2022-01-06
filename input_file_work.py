@@ -13,8 +13,8 @@ Script read values and add values in list.
 List with values return in main script hash.py
 
 Author: Vladimir Leonov
-Release: 0.0.2
-Date: 01.01.2022
+Release: 0.0.3
+Date: 06.01.2022
 """
 
 

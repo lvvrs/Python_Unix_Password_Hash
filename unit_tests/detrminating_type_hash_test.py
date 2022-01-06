@@ -6,8 +6,8 @@ Available hash type's:
 3) SHA-512
 
 Author: Vladimir Leonov
-Release: 0.0.1
-Date: 27.12.2021
+Release: 0.0.2
+Date: 06.01.2022
 """
 
 
@@ -30,7 +30,7 @@ class TestCases(unittest.TestCase):
               'SHA-512')
 
     def test_error_hash(self):
-        self.assertEqual(determinating_type_hash('$7$sadsadsa$dsadasd'), 'ERROR Uncnown Hash Type or Bad hash!')
+        self.assertEqual(determinating_type_hash('$7$sadsadsa$dsadasd'), 'ERROR Unknown Hash Type or Bad hash!')
 
 
 if __name__ == '__main__':
